@@ -29,5 +29,8 @@ if helloWorld.contains("world") || helloWorld.contains("Hello") {
 helloWorld.count
 
 func calculateTriangle(base: Int, height: Int) -> Int {
-    let
+    let area = (base * height) / 2
+    return area
 }
+
+print (calculateTriangle(base: 2, height: 4))
