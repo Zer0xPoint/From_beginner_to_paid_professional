@@ -22,12 +22,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func colorizeBtnWasPressed(_ sender: Any) {
+        colorizeBtn.colorize()
     }
     
     @IBAction func wiggleBtnWasPressed(_ sender: Any) {
+        wiggleBtn.wiggle()
     }
     
     @IBAction func dimBtnWasPressed(_ sender: Any) {
+        dimBtn.dim()
     }
     
 }
