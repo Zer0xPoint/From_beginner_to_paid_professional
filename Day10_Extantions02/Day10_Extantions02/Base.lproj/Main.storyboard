@@ -30,6 +30,9 @@
                                 <state key="normal" title="Wiggle">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="wiggleBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRb-oT-vlZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-Hd-ScQ">
                                 <rect key="frame" x="119" y="317" width="136" height="54"/>
@@ -39,6 +42,9 @@
                                 <state key="normal" title="Colorize">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorizeBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GV3-87-7fE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7V-wv-sVT">
                                 <rect key="frame" x="119" y="441" width="136" height="54"/>
@@ -48,11 +54,19 @@
                                 <state key="normal" title="Dim">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dimBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jer-kA-NLH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="colorizeBtn" destination="6kk-Hd-ScQ" id="Dv2-B6-vqU"/>
+                        <outlet property="dimBtn" destination="W7V-wv-sVT" id="fAg-ze-7rp"/>
+                        <outlet property="wiggleBtn" destination="tgH-ld-K4r" id="8Cd-Fh-Baz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
