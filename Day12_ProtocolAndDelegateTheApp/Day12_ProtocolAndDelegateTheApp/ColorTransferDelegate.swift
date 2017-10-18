@@ -6,7 +6,6 @@
 //  Copyright © 2017 Riley Lee. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 protocol ColorTransferDelegate {
