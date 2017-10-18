@@ -13,6 +13,7 @@
 		881A0E381F964D080052EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881A0E361F964D080052EB86 /* LaunchScreen.storyboard */; };
 		881A0E421F9655590052EB86 /* ColorPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881A0E411F9655590052EB86 /* ColorPickerVC.swift */; };
 		881A0E451F9658050052EB86 /* ColorPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881A0E441F9658050052EB86 /* ColorPresenterVC.swift */; };
+		886DBA121F96EE8D0050CEC1 /* ColorTransferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DBA111F96EE8D0050CEC1 /* ColorTransferDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		881A0E391F964D080052EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881A0E411F9655590052EB86 /* ColorPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerVC.swift; sourceTree = "<group>"; };
 		881A0E441F9658050052EB86 /* ColorPresenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPresenterVC.swift; sourceTree = "<group>"; };
+		886DBA111F96EE8D0050CEC1 /* ColorTransferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTransferDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				881A0E361F964D080052EB86 /* LaunchScreen.storyboard */,
 				881A0E391F964D080052EB86 /* Info.plist */,
 				881A0E411F9655590052EB86 /* ColorPickerVC.swift */,
+				886DBA111F96EE8D0050CEC1 /* ColorTransferDelegate.swift */,
 			);
 			path = Day12_ProtocolAndDelegateTheApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				881A0E2E1F964D080052EB86 /* AppDelegate.swift in Sources */,
+				886DBA121F96EE8D0050CEC1 /* ColorTransferDelegate.swift in Sources */,
 				881A0E421F9655590052EB86 /* ColorPickerVC.swift in Sources */,
 				881A0E451F9658050052EB86 /* ColorPresenterVC.swift in Sources */,
 			);
