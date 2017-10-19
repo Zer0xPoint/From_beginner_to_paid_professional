@@ -41,7 +41,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Magic Color" id="qUA-zt-qLY">
                         <barButtonItem key="backBarButtonItem" title="Back" id="yQY-Cs-xPd"/>
-                        <barButtonItem key="leftBarButtonItem" title="Reflash" id="yX6-sO-DtA">
+                        <barButtonItem key="leftBarButtonItem" title="Random!" id="yX6-sO-DtA">
                             <connections>
                                 <action selector="userDidPressReflashColorBtn:" destination="BYZ-38-t0r" id="H4y-1O-Tdh"/>
                             </connections>
@@ -135,7 +135,6 @@
         <!--Navigation Controller-->
         <scene sceneID="g9c-LJ-bWi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="07w-dc-abh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ua-hA-w4l" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kx2-hT-xFO">
@@ -152,6 +151,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qaf-LV-2CC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07w-dc-abh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-225" y="118"/>
         </scene>
