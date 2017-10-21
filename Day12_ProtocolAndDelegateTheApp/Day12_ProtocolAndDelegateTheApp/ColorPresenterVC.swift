@@ -27,6 +27,13 @@ class ColorPresenterVC: UIViewController, ColorTransferDelegate {
         let randomColor = UIColor(red: randomNumberArray[0]/255, green: randomNumberArray[1]/255, blue: randomNumberArray[2]/255, alpha: 1.0)
         UIView.animate(withDuration: 0.5, animations: {
             self.view.backgroundColor = randomColor
+            if randomNumberArray[0] >= randomNumberArray[1] && randomNumberArray[0] >= randomNumberArray[2] {
+                self.colorNameLbl.text = "Red"
+            } else if randomNumberArray[1] >= randomNumberArray[0] && randomNumberArray[1] >= randomNumberArray[2] {
+                self.colorNameLbl.text = "Green"
+            } else {
+                self.colorNameLbl.text = "Blue"
+            }
             })
     }
     
