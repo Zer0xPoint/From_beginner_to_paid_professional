@@ -30,10 +30,8 @@ class ViewController: UIViewController {
                 
                 if on == true {
                     device.torchMode = .on
-                    print("On")
                 } else {
                     device.torchMode = .off
-                    print("Off")
                 }
                 
                 device.unlockForConfiguration()

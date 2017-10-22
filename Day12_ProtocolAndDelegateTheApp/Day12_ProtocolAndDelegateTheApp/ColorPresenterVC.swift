@@ -22,18 +22,28 @@ class ColorPresenterVC: UIViewController, ColorTransferDelegate {
         colorNameLbl.text = colorName
     }
 
+    func detectColor(randomNumberArray: [CGFloat]) -> String {
+        if randomNumberArray[0] > randomNumberArray[1] && randomNumberArray[0] > randomNumberArray[2] {
+            return "Somecolor"
+        } else if randomNumberArray[1] > randomNumberArray[0] && randomNumberArray[1] > randomNumberArray[2] {
+            return "Somecolor"
+        } else if randomNumberArray[2] > randomNumberArray[0] && randomNumberArray[2] > randomNumberArray[1] {
+            return "Somecolor"
+        } else {return "Dont Regenize" }
+    }
+     
     @IBAction func userDidPressReflashColorBtn(_ sender: Any) {
         let randomNumberArray = generateRandomNumberArray(quantity: 3)
         let randomColor = UIColor(red: randomNumberArray[0]/255, green: randomNumberArray[1]/255, blue: randomNumberArray[2]/255, alpha: 1.0)
         UIView.animate(withDuration: 0.5, animations: {
             self.view.backgroundColor = randomColor
-            if randomNumberArray[0] >= randomNumberArray[1] && randomNumberArray[0] >= randomNumberArray[2] {
-                self.colorNameLbl.text = "Red"
-            } else if randomNumberArray[1] >= randomNumberArray[0] && randomNumberArray[1] >= randomNumberArray[2] {
-                self.colorNameLbl.text = "Green"
-            } else {
-                self.colorNameLbl.text = "Blue"
-            }
+//            if randomNumberArray[0] >= randomNumberArray[1] && randomNumberArray[0] >= randomNumberArray[2] {
+//                self.colorNameLbl.text = "Red"
+//            } else if randomNumberArray[1] >= randomNumberArray[0] && randomNumberArray[1] >= randomNumberArray[2] {
+//                self.colorNameLbl.text = "Green"
+//            } else {
+//                self.colorNameLbl.text = "Blue"
+//            }
             })
     }
     
